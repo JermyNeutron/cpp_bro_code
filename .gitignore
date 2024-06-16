@@ -1,4 +1,8 @@
 # .gitignore
 
+# File types
+*.obj
+*.exe
+
 # Workspace
 cpp_bro_code.code-workspace
