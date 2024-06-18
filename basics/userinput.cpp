@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+
+/*
+cout << (insertion operator)
+cin >> (extraction operator)
+*/
+
+int main(){
+    std::string name;
+    int age;
+
+    std::cout << "What is your name?: ";
+    // std::cin >> name; // accepts one word answers, no space
+    std::getline(std::cin >> std::ws, name);
+
+    std::cout << "What is your age? : ";
+    std::cin >> age;
+
+    std::cout << "Hello " << name << '\n';
+    std::cout << "You are " << age << " years old.\n";
+
+    // when using ::getline(), if there's any input prior to to it, it'll accept an 'invisible' \n from the previous input. so we add the `>> std::ws` for account for white space
+
+    return 0;
+}
