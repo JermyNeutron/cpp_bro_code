@@ -21,7 +21,7 @@ int main()
     // prefix is scope resolution operator;
     using namespace first;
 
-    std::cout << second::x;
+    std::cout << first::x;
 
     return 0;
 }
